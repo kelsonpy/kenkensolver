@@ -1,0 +1,24 @@
+Interface:
+- The most challenging aspect will be generating the grids and cages
+ - we should keep it simple: 
+    - Have pre-defined puzzles (this will make it easier to build the KenKen solver, I believe)
+    - Limit the grid size to 3x3 (we can allow different size grids if time permits)
+
+Interaction:
+- For this, we have to make it possible for a player to input a potential solution
+ - Given the only grid size will be 3x3, we just have to make sure the user enters a 1, 2, or 3.
+ - For now, we will not provide tips--the puzzle will remain unsolved until each cell is given the correct number
+    or until the button is pressed to solve the pre-defined puzzle
+ - To prevent invalid input, and make error-handling much easier, we can hardwire the valid inputs 1, 2, 3 (for a 3x3 grid)
+ 
+ Additional:
+ - If time permits, we can "beautify" the interface
+  - highlight the currently "active" grid
+  - a check option that indicates which cells are correct and which are incorrect
+
+
+Puzzle solver logic:
+- Because the puzzles are pre-determined, we can have corresponding arrays with the solution for each pre-defined puzzle
+ - this is not necessarily a unique KenKen puzzle solver. Instead, we'll have to think of this project as creating a Ken-Ken game,
+   with the potential of becoming a KenKen solver (I believe this project, while different from the project ideas, meets the requirements of being complex).
+
