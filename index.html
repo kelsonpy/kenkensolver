@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>KenKen Solver</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <header>
-            <h1>KenKen Solver</h1>
-        </header>
-        <main>
-            <div id="kenken-grid">
-                
-            </div>
-            <button id="solve-button">Solve</button>
-        </main>
-        <script src="js/main.js"></script>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose KenKen Puzzle Size</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Choose KenKen Puzzle Size</h1>
+    </header>
+    <main>
+        <form action="generate-grid.html" method="GET">
+            <label for="puzzleSize">Puzzle Size:</label>
+            <select id="puzzleSize" name="puzzleSize">
+                <option value="3">3x3</option>
+                <option value="4">4x4</option>
+                <option value="5">5x5</option>
+            </select>
+            <br><br>
+            <button type="submit">Generate Puzzle</button>
+        </form>
+    </main>
+</body>
 </html>
+
