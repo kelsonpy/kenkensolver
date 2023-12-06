@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+  
+    <link rel="stylesheet" href="style.css">
+
+    <title>Rocco's and Michaels's Ken Ken Puzzle</title>
+</head>
+
+
+
+<body>
+
+<header>Rocco's and Michael's  Ken Ken Puzzle</header>
+
+
+    <div id="puzzle-container">
+      
+    </div>
+
+
+
+    <div id="input- container">
+        
+
+
+            <input type="text" id="input" maxlength="1">
+
+
+        <button onclick="checkSolution()">Check Solution</button>
+        <button onclick="nextPuzzle()">Next Puzzle</button>
+
+        <button onclick="isCorrect()">New Check Button</button>
+
+
+    </div>
+    <div id="message-container">
+        <p id="message"></p>
+        <button onclick="nextPuzzle()">Next Puzzle</button>
+
+
+
+
+    </div>
+
+    <script src="script.js"></script>
+
+
+    <script>
+     
+        document.addEventListener('Content is Loaded', initPuzzle);
+
+
+    </script>
+
+</body>
+
+</html>

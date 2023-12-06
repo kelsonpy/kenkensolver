@@ -1,0 +1,53 @@
+#puzzle-container {
+    fontsize: 1.5 em;
+    display: grid;
+    grid-template-columns: repeat(5, 50px);
+    grid-template-rows: repeat(5, 50px);
+    gap: 5px;
+}
+
+#puzzle-container input {
+ fontsize: 1.5 em;
+    Width: 100%;
+    Height: 100%;
+    text-align: center;
+   
+}
+
+#input-container {
+    margin-top: 50px;
+}
+
+#message-container {
+    margin-top: 20px;
+    display: none; 
+}
+
+#message {
+
+    font-weight: bold;
+
+    color: green;
+}
+
+#message-container.success #message {
+    color: green;
+}
+
+#message-container #message {
+    font-weight: bold;
+    color: red;
+}
+
+header {
+    //size: 20px;
+    font-size: 75px;
+    color: green;
+    text-shadow: red;
+    text-align: center;
+    color: blue; 
+}
+
+.bottom-border {
+    border-bottom: 2px solid red; /* Change the color and thickness as needed */
+}
