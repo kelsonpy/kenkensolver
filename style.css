@@ -51,3 +51,14 @@ header {
 .bottom-border {
     border-bottom: 2px solid red; /* Change the color and thickness as needed */
 }
+
+
+.ken-cell {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 16px;
+    color: #333; /* Change the color as needed */
+    border: 1px solid #ccc; /* Change the border style as needed */
+}
