@@ -1,21 +1,89 @@
-/*
- Basic styling for the grid
-*/
 
-#kenken-grid {
-    display: inline-block;
-    border: 2px solid black;
+body {
+    margin: 30px;
 }
 
-.grid-row {
-    display: flex;
+h1 {
+    font-size: 72px;
+    font-family: sans-serif;
 }
 
-.grid-cell {
-    width: 50px;  /* Adjust based on your preference */
-    height: 50px; /* Adjust based on your preference */
-    border: 1px solid black;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 50px; /* Same as height for vertical centering */
+.parent{
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px;
+}
+
+.parent > div {
+    position: relative;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.parent > div > input{
+    width: 20%;
+    height: 30%;
+    border-color: white;
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    transform: translate(-50%, -50%);    
+}
+
+.parent > div.cage_1 {
+    border-left: none;
+    
+}
+
+.parent div:nth-child(1){
+    border-top: 4px solid black;
+    border-left: 4px solid black;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+.parent div:nth-child(2){
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+    border-right: 4px solid black;
+}
+
+.parent div:nth-child(3){
+    border-top: 5px solid black;
+    border-bottom: 4px solid black;
+    border-right: 4px solid black;
+}
+
+.parent div:nth-child(4){
+    border-left: 4px solid black;
+    border-bottom: 4px solid black;
+    border-right: 4px solid black;
+}
+
+.parent div:nth-child(5){
+    border-right: 4px solid black;
+}
+
+.parent div:nth-child(6){
+    border-right: 4px solid black;
+}
+
+.parent div:nth-child(7){
+    border-left: 4px solid black;
+    border-right: 4px solid black;
+    border-bottom: 4px solid black;
+}
+
+.parent div:nth-child(8){
+    border-right: 4px solid black;
+    border-bottom: 4px solid black;
+    border-top: 1px solid gray;
+}
+
+.parent div:nth-child(9){
+    border-bottom: solid black;
+    border-right: 4px solid black;
+    border-top: 1px solid gray;
 }
