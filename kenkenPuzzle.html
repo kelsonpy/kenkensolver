@@ -34,9 +34,11 @@
 
     </table>
 
-        <button id="check">Check Puzzle</button>
+        <button id="check">Check Puzzle 1</button>
         <button id="submitPuzzle">Submit puzzle</button>
         <a href="index.html"><button id="newPuzzle">Try a new puzzle</button></a>
+        <button id="tryPuzzle2">Attempt Puzzle 2</button>
+        <button id="checkPuzzle2">Check Puzzle 2</button>
         <script src="/js/main.js"></script>
         
 
@@ -58,6 +60,8 @@
  
 
  document.getElementById('check').addEventListener('click', checkPuzzle);
+document.getElementById('tryPuzzle2').addEventListener('click', resetPuzzle2);
+document.getElementById('checkPuzzle2').addEventListener('click', checkPuzzle2);
 
 
 
@@ -68,7 +72,7 @@ function checkPuzzle() {
     var result3 = checkBox3();
     var result4 = checkBox4();
     var result5 = checkBox5();
-    
+
     var result6 = checkBox6();
     var result7 = checkBox7();
     var result8 = checkBox8();
@@ -78,7 +82,65 @@ function checkPuzzle() {
         alert("You figured out our KenKen Puzzle. Click TRY NEW PUZZLE to play a new puzzle");
     }
 }
+
+function checkPuzzle2() {
+    var result1Puzzle2 = checkBox1Puzzle2();
+
+    var result2Puzzle2 = checkBox2Puzzle2();
+    var result3Puzzle2 = checkBox3Puzzle2();
+    var result4Puzzle2 = checkBox4Puzzle2();
+    var result5Puzzle2 = checkBox5Puzzle2();
+
+    var result6Puzzle2 = checkBox6Puzzle2();
+    var result7Puzzle2 = checkBox7Puzzle2();
+    var result8Puzzle2 = checkBox8Puzzle2();
+    var result9Puzzle2 = checkBox9Puzzle2();
+
+    if (result1Puzzle2 && result2Puzzle2 && result3Puzzle2 && result4Puzzle2 && result5Puzzle2 && result6Puzzle2 && result7Puzzle2 && result8Puzzle2 && result9Puzzle2) {
+        alert("You figured out our KenKen Puzzle. Click TRY NEW PUZZLE to play a new puzzle");
+    }
+}
     
+     function resetPuzzle2() {
+                
+                var inputs = [input1, input2, input3, input4, input5, input6, input7, input8, input9];
+
+                inputs.forEach(function (input) {
+                    input.value = ' ' ;
+                     
+                    input1.style.backgroundColor = 'pink';
+                    input1.placeholder='9x';
+
+
+                    input2.style.backgroundColor = 'pink';
+                    input2.placeholder='9x';
+
+
+                    input3.style.backgroundColor = 'pink';
+                    input3.placeholder='9x';
+
+
+                    input4.style.backgroundColor = 'teal';
+                    input4.placeholder='5+';
+
+
+                    input5.style.backgroundColor = 'teal';
+                    input5.placeholder='5+';
+
+
+                    input6.style.backgroundColor = 'teal';
+                    input6.placeholder='5+';
+
+                    input7.style.backgroundColor = 'cyan';
+                    input7.placeholder='2-';
+
+                    input8.style.backgroundColor = 'cyan';
+                    input8.placeholder='2-';
+
+                    input9.style.backgroundColor = 'cyan';
+                    input9.placeholder='2-';
+                });
+            }
 
     function checkBox1(){
      var inputValue = parseInt(input1.value, 10); 
@@ -192,6 +254,126 @@ function checkBox9(){
         return 0;
       }
 }
+
+
+
+
+
+
+function checkBox1Puzzle2(){
+     var inputValue = parseInt(input1.value, 10); 
+
+      
+      if (inputValue === 2) {
+        input1.style.backgroundColor = "lightgreen"; 
+        return 1;
+      } else {
+        input1.style.backgroundColor = "teal"; 
+        return 0;
+      }
+}  
+
+        function checkBox2Puzzle2(){
+     var inputValue = parseInt(input2.value, 10); 
+
+      
+      if (inputValue === 1) {
+        input2.style.backgroundColor = "lightgreen"; 
+        return 1;
+      } else {
+        input2.style.backgroundColor = "teal"; 
+        return 0;
+      }
+}   
+
+function checkBox3Puzzle2(){
+     var inputValue = parseInt(input3.value, 10); 
+
+      
+      if (inputValue === 1) {
+        input3.style.backgroundColor = "lightgreen";
+        return 1; 
+      } else {
+        input3.style.backgroundColor = "teal"; 
+        return 0;
+      }
+}
+
+function checkBox4Puzzle2(){
+     var inputValue = parseInt(input4.value, 10);
+
+      
+      if (inputValue === 3) {
+        input4.style.backgroundColor = "lightgreen"; 
+        return 1;
+      } else {
+        input4.style.backgroundColor = "yellow"; 
+        return 0;
+      }
+}
+function checkBox5Puzzle2(){
+     var inputValue = parseInt(input5.value, 10); 
+
+     
+      if (inputValue === 2) {
+        input5.style.backgroundColor = "lightgreen";
+        return 1;
+      } else {
+        input5.style.backgroundColor = "yellow"; 
+        return 0;
+      }
+}
+function checkBox6Puzzle2(){
+     var inputValue = parseInt(input6.value, 10); 
+
+     
+      if (inputValue === 2) {
+        input6.style.backgroundColor = "lightgreen"; 
+        return 1;
+      } else {
+        input6.style.backgroundColor = "yellow"; 
+        return 0;
+      }
+}
+function checkBox7Puzzle2(){
+     var inputValue = parseInt(input7.value, 10); 
+
+      
+      if (inputValue === 3) {
+        input7.style.backgroundColor = "lightgreen"; 
+        return 1;
+      } else {
+
+        input7.style.backgroundColor = "pink"; 
+        return 0;
+      }
+}
+function checkBox8Puzzle2(){
+     var inputValue = parseInt(input8.value, 10); 
+
+      
+      if (inputValue === 1) {
+        input8.style.backgroundColor = "lightgreen"; 
+        return 1;
+      } else {
+        input8.style.backgroundColor = "pink"; 
+        return 0;
+      }
+}
+function checkBox9Puzzle2(){
+     var inputValue = parseInt(input9.value, 10); 
+
+      
+      if (inputValue === 2) {
+        input9.style.backgroundColor = "lightgreen"; 
+        return 1;
+      } else {
+        input9.style.backgroundColor = "pink"; 
+        return 0;
+      }
+}
+
+  
 
   </script>
     </body>
