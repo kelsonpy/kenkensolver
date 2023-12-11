@@ -10,18 +10,140 @@
     <body>
         <h2>KenKen Puzzle</h2>
         <div class="parent">
-            <div class="cage_1"><input type="number" style="background-color: teal" min="1" max="3" placeholder="6x">6x<div>
-            <div class="cage_1"><input type="number" style="background-color: teal" min="1" max="3" placeholder="6x"><div>
-            <div class="cage_2"><input type="number" style="background-color: teal" min="1" max="3" placeholder="3">3<div>
-            <div class="cage_1"><input type="number" style="background-color: yellow;" min="1" max="3"></div>
-            <div class="cage_3"><input type="number" style="background-color: yellow;" min="1" max="3" placeholder="2-">2-</div>
-            <div class="cage_4"><input type="number" style="background-color: yellow;" min="1" max="3" placeholder="3+">3+</div>
-            <div class="cage_5"><input type="number" style="background-color: lightpink;" min="1" max="3" placeholder="2">2</div>
-            <div class="cage_3"><input type="number" style="background-color: lightpink;" min="1" max="3"></div>
-            <div class="cage_4"><input type="number" style="background-color: lightpink;" min="1" max="3"></div>
+            <div class="cage_1"><label for="inputBox1"><input type="number" id='input1' style="background-color: teal" min="1" max="3" placeholder="6x">6x<div>
+            <div class="cage_1"><input type="number" id='input2'style="background-color: teal" min="1" max="3" placeholder="6x"><div>
+            <div class="cage_2"><input type="number" id='input3' style="background-color: teal" min="1" max="3" placeholder="3">3<div>
+            <div class="cage_1"><input type="number" id='input4' style="background-color: yellow;" min="1" max="3"></div>
+            <div class="cage_3"><input type="number" id='input5'style="background-color: yellow;" min="1" max="3" placeholder="2-">2-</div>
+            <div class="cage_4"><input type="number" id='input6' style="background-color: yellow;" min="1" max="3" placeholder="3+">3+</div>
+            <div class="cage_5"><input type="number" id='input7' style="background-color: lightpink;" min="1" max="3" placeholder="2">2</div>
+            <div class="cage_3"><input type="number" id='input8' style="background-color: lightpink;" min="1" max="3"></div>
+            <div class="cage_4"><input type="number" id='input9' style="background-color: lightpink;" min="1" max="3"></div>
         </div>
         <button id="submitPuzzle">Submit puzzle</button>
         <a href="index.html"><button id="newPuzzle">Try a new puzzle</button></a>
         <script src="/js/main.js"></script>
+        
+
+         <script>
+    
+    var input1 = document.getElementById('input1');
+    var input2 = document.getElementById('input2');
+    var input3 = document.getElementById('input3');
+    var input4 = document.getElementById('input4');
+    var input5 = document.getElementById('input5');
+    var input6 = document.getElementById('input6');
+    var input7 = document.getElementById('input7');
+    var input8 = document.getElementById('input8');
+    var input9 = document.getElementById('input9');
+
+    
+    input1.addEventListener("input", checkBox1);
+    input2.addEventListener("input", checkBox2);
+    input3.addEventListener("input", checkBox3);
+    input4.addEventListener("input", checkBox4);
+    input5.addEventListener("input", checkBox5);
+    input6.addEventListener("input", checkBox6);
+    input7.addEventListener("input", checkBox7);
+    input8.addEventListener("input", checkBox8);
+    input9.addEventListener("input", checkBox9);
+
+    function checkBox1(){
+     var inputValue = parseInt(this.value, 10); 
+
+      
+      if (inputValue === 2) {
+        this.style.backgroundColor = "lightgreen"; 
+      } else {
+        this.style.backgroundColor = "red"; 
+      }
+}  
+
+        function checkBox2(){
+     var inputValue = parseInt(this.value, 10); 
+
+      
+      if (inputValue === 1) {
+        this.style.backgroundColor = "lightgreen"; 
+      } else {
+        this.style.backgroundColor = "red"; 
+      }
+}   
+
+function checkBox3(){
+     var inputValue = parseInt(this.value, 10); 
+
+      
+      if (inputValue === 1) {
+        this.style.backgroundColor = "lightgreen"; 
+      } else {
+        this.style.backgroundColor = "red"; 
+      }
+}
+
+function checkBox4(){
+     var inputValue = parseInt(this.value, 10);
+
+      
+      if (inputValue === 3) {
+        this.style.backgroundColor = "lightgreen"; 
+      } else {
+        this.style.backgroundColor = "red"; 
+      }
+}
+function checkBox5(){
+     var inputValue = parseInt(this.value, 10); 
+
+     
+      if (inputValue === 2) {
+        this.style.backgroundColor = "lightgreen";
+      } else {
+        this.style.backgroundColor = "red"; 
+      }
+}
+function checkBox6(){
+     var inputValue = parseInt(this.value, 10); 
+
+     
+      if (inputValue === 1) {
+        this.style.backgroundColor = "lightgreen"; 
+      } else {
+        this.style.backgroundColor = "red"; 
+      }
+}
+function checkBox7(){
+     var inputValue = parseInt(this.value, 10); 
+
+      
+      if (inputValue === 1) {
+        this.style.backgroundColor = "lightgreen"; 
+      } else {
+
+        this.style.backgroundColor = "red"; 
+      }
+}
+function checkBox8(){
+     var inputValue = parseInt(this.value, 10); 
+
+      
+      if (inputValue === 2) {
+        this.style.backgroundColor = "lightgreen"; 
+      } else {
+        this.style.backgroundColor = "red"; 
+      }
+}
+function checkBox9(){
+     var inputValue = parseInt(this.value, 10); 
+
+      
+      if (inputValue === 3) {
+        this.style.backgroundColor = "lightgreen"; 
+      } else {
+        this.style.backgroundColor = "red"; 
+      }
+}
+
+  </script>
     </body>
+
 </html>
